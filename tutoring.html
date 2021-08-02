@@ -10,7 +10,7 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,38 @@
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/4706c65950.js" crossorigin="anonymous"></script>
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Load header and footer -->
+  <script>
+    $(function(){
+        $("#header").load("./assets/header.html");
+    });
+  </script>
+  <script>
+    $(function(){
+        $("#footer").load("./assets/footer.html");
+    });
+  </script>
+
+  <!-- Scroll to top of page -->
+  <script>
+    window.scrollTo(0, 0);
+  </script>
+
   <title>Document</title>
-  <link rel="icon" type="image/jpg" href="../img/favicon_3.png"/>
+  <link rel="icon" type="image/jpg" href="./img/favicon_3.png"/>
 </head>
 
 <body class="bg-mywhite text-mynavy">
-  
+
+  <div id="header"></div>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous"></script>
+
 </body>
 </html>
