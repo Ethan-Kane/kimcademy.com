@@ -13,12 +13,24 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+/* html, body{
+    min-height: 100%;
+} */
+
+/* .full-height {
+    height: 100vh;
+} */
+
 .text-mygold{
     color: var(--mygold);
 }
 
 .text-mynavy{
     color: var(--mynavy);
+}
+
+.text-mygrey{
+    color: rgba(224, 224, 224, 0.589);
 }
 
 .bg-mynavy{
@@ -41,15 +53,10 @@ body{
 
 .navbar{
     padding: 10px;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.589);
 }
 
 .navbar-brand{
-    display: flex;
-    align-items: center;
-    transform:translateX(-50%);
-    position: absolute;
-    left: 50%;
-
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
@@ -58,18 +65,13 @@ body{
 .navbar-brand > img {
     margin-right: 5%;
 }
-/* .navbar-light .navbar-brand:hover{
-    color: var(--mynavy2);
-} */
-
-/* Navbar bottom separator line */
-.navbar{
-    border-bottom: 1px solid rgb(199, 199, 199);
-}
 
 /* Navbar collapse icon */
 .navbar-toggler {
     border: none; /* Removes border color */
+}
+.button-light {
+    color: var(--mywhite);
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -86,6 +88,13 @@ body{
 .navbar-light .navbar-nav .nav-link:hover{
     color: var(--mynavy2);
 }
+/* Dark navbar */
+.navbar-light .navbar-nav .h-dark{
+    color: var(--mywhite);
+}
+.navbar-light .navbar-nav .h-dark:hover{
+    color: rgb(202, 202, 202);
+}
 
 /* INTRO ---------------------------------------------------------*/
 .responsive{
@@ -94,11 +103,18 @@ body{
     height: auto;
 }
 
-/* WHY ME ---------------------------------------------------------*/
-/* .text-justify{
+/* TEXT ---------------------------------------------------------*/
+.text-justify{
     text-align: justify;
     text-justify: inter-word;
-} */
+}
+
+/* IMAGE ---------------------------------------------------------*/
+.dude-m{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
 
 /* TESTIMONIALS ---------------------------------------------------------*/
 .test-r{
@@ -163,6 +179,17 @@ footer{
     color: darkgray;
 }
 
-.fa-chevron-circle-up{
+.fa-chevron-up{
     color: var(--mygold);
+}
+
+/* FORM ---------------------------------------------------------*/
+select:required:invalid {
+    color: gray;
+}
+select:invalid > option[value=""][disabled] {
+display: none;
+}
+option {
+color: black;
 }

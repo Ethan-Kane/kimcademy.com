@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact the Instructor | Kimcademy</title>
+  <meta name="keywords" content="writing, english, french, editing, proofreading, academic, school, essay writing, writing exam">
+  <meta name="author" content="Eric Kim">
+  <meta name="description" content="Contact Kimcademy to discuss tutoring rates and obtain quotes for editing.">
+  
+  <!-- Include stylesheets -->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/4706c65950.js" crossorigin="anonymous"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Load header and footer -->
+  <script>
+    $(function(){
+        $("#header").load("./assets/header_dark.html");
+    });
+  </script>
+  <script>
+    $(function(){
+        $("#footer").load("./assets/footer_dark.html");
+    });
+  </script>
+
+  <!-- Scroll to top of page -->
+  <script>
+    window.scrollTo(0, 0);
+  </script>
+
+  <!-- Emailjs -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_sdoUj5R1VFYV7SBNTbBhG");
+    })();
+  </script> -->
+  <!-- Emailjs account info -->
+  <!-- User ID: user_sdoUj5R1VFYV7SBNTbBhG
+  Access Token: ce7b5f13c5a943fa63272b82b56346cf -->
+
+  <link rel="icon" type="image/jpg" href="./img/favicon_3.png"/>
+</head>
+
+<body class="bg-mywhite text-mynavy">
+
+  <div id="header"></div>
+
+  <div class="header bg-mynavy text-light">
+    <section class="p-5">
+      <div class="container">
+          <h1> <b>Contact</b> </h1>
+          <!-- <h4 class="text-mygrey"> Scheduled lessons to improve your writing </h4> -->
+      </div>
+    </section>
+  </div>
+  
+  <section class="p-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2 class="text-center">Interested?</h2>
+        <p class="h5 p-5 text-center col-lg-8">Fill out the form below and I'll respond as soon as possible.
+          <br> In the message box, feel free to voice any questions or provide details about what you are specifically looking for and expecting.
+        </p>
+
+        <form class="col-md-8"> <!-- https://bootstrapious.com/p/bootstrap-recaptcha -->
+          <div class="row my-3">
+              <div class="col-lg-6">
+                  <div class="form-group">
+                      <label for="input_fname">First name</label>
+                      <input id="input_fname" type="text" name="name" class="form-control" placeholder="Please enter your first name" required="required"
+                          data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="form-group">
+                      <label for="input_lname">Last name</label>
+                      <input id="input_lname" type="text" name="surname" class="form-control" placeholder="Please enter your last name" required="required"
+                          data-error="Lastname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="input_email">Email</label>
+                <input id="input_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required"
+                    data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Service</label>
+                <select class="form-control" id="input_service" required="required" data-error="Valid selection is required.">
+                  <option disabled selected>Please make a selection</option>
+                  <option id="select_tutoring">Tutoring</option>
+                  <option id="select_editing">Editing</option>
+                </select>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group my-3">
+              <label for="input_msg">Message</label>
+              <textarea id="input_msg" name="message" class="form-control" placeholder="Message for me " rows="4" required="required"
+                  data-error="Please leave a message."></textarea>
+              <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary" id="input_submit">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="text/javascript">
+
+    (function () {
+      // emailjs.init("USERID");
+      emailjs.init("user_sdoUj5R1VFYV7SBNTbBhG");
+    })();
+
+    function validate() {
+      // let loader = document.querySelector(".loader");
+      let fname = document.querySelector("#input_fname");
+      let lname = document.querySelector("#input_lname");
+      let email = document.querySelector("#input_email");
+      let msg = document.querySelector("#input_msg");
+      let choice = document.querySelector("#input_service");
+      let s_edt = document.querySelector("#select_editing");
+      let btn = document.querySelector("#input_submit");
+
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (fname.value == "" || lname.value == "" || email.value == "" || msg.value == "" || choice.value=="Please make a selection") {
+          emptyerror();
+        } else {
+          sendmail(fname.value+" "+lname.value, email.value, msg.value, choice.value);
+          success();
+          $('form').get(0).reset()
+        }
+      });
+    }
+    validate();
+
+    function isChecked(optionId) {
+      return $(".demo > #" + optionId).get(0).selected;
+    }
+
+    function sendmail(name, email, msg, choice) {
+      if (choice=="Tutoring"){
+        emailjs.send("service_4jbyywy", "template_b0t5ijn", {
+          from_name: name,
+          reply_to: email,
+          message: msg,
+        });
+      } else if(choice=="Editing"){
+        emailjs.send("service_4jbyywy", "template_5bd0kup", {
+          from_name: name,
+          reply_to: email,
+          message: msg,
+        });
+      }
+    }
+
+    function emptyerror() {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Fields cannot be empty!",
+      });
+    }
+
+    function error() {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong! Contact me directly at kimcademy@gmail.com",
+      });
+    }
+
+    function success() {
+      Swal.fire({
+        icon: "success",
+        title: "Success...",
+        text: "Successfully sent message",
+      });
+    }
+  </script>
+
+</body>
+</html>
