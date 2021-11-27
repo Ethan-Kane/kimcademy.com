@@ -3,3 +3,11 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://www.kimcademy.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+RewriteRule ^index.html$ / [L,R=301]
