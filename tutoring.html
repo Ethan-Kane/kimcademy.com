@@ -196,21 +196,21 @@
       <div class="row">
         <div class="col-md mb-3">
           <label for="InputFname" class="form-label">First name</label>
-          <input type="fname" class="form-control" id="InputFname" maxlength="30" required="required">
+          <input type="fname" class="form-control" id="InputFname" name="First name" maxlength="30" required="required">
         </div>
         <div class="col-md mb-3">
           <label for="InputLname" class="form-label">Last name</label>
-          <input type="lname" class="form-control" id="InputLname" maxlength="30" required="required">
+          <input type="lname" class="form-control" id="InputLname" name="Last name" maxlength="30" required="required">
         </div>
         <div class="col-md mb-3">
           <label for="InputEmail" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="InputEmail" maxlength="50" required="required">
+          <input type="email" class="form-control" id="InputEmail" name="Email" maxlength="50" required="required">
         </div>
       </div>
       <div class="row">
         <div class="col-md mb-3">
           <label for="InputStudent" class="form-label">Student</label>
-          <select class="form-control" id="InputStudent" data-error="Valid selection is required.">
+          <select class="form-control" id="InputStudent" name="Student">
             <option disabled selected value style="display:none"></option>
             <option id="select_tutoring">Grade 6-12</option>
             <option id="select_editing">University</option>
@@ -219,11 +219,11 @@
         </div>
         <div class="col-md mb-3">
           <label for="InputTrialdate" class="form-label">Trial lesson:</label>
-          <input type="date" class="form-control" id="InputTrialdate" name="InputTrialdate" value="2023-06-01" min="2023-06-01" max="2023-06-01">
+          <input type="date" class="form-control" id="InputTrialdate" name="Trial date" value="2023-06-01" min="2023-06-01" max="2023-06-01">
         </div>
         <div class="col-md mb-3">
           <label for="InputTrialtime" class="form-label">Meeting time:</label>
-          <select class="form-control" id="InputTrialtime">
+          <select class="form-control" id="InputTrialtime" name="Trial time">
             <option disabled selected value style="display:none"></option>
             <option id="select_530">5:30 pm</option>
             <option id="select_600">6:00 pm</option>
@@ -242,7 +242,7 @@
 
       <div class="mb-3">
         <label for="InputMsg">Message</label>
-        <textarea id="InputMsg" name="message" class="form-control" placeholder="Please feel free to leave any other additional details."
+        <textarea id="InputMsg" name="Message" class="form-control" placeholder="Please feel free to leave any other additional details."
         rows="3" maxlength="1000"></textarea>
       </div>
 
