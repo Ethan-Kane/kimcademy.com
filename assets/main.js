@@ -25,7 +25,6 @@ function stickyNav() {
     mobilenavtog.classList.remove("active");
     titlelogo.querySelector('img').src = 'img/titlelogo.png';
   }
-  console.log("Scroll sticky nav");
 }
 
 // Show/hide mobile menu
@@ -44,22 +43,22 @@ function openMobileNav() {
   return false;
 }
 
-$(document).ready(function () {
-  var width = $(window).width();
-  if (width <= 768) {
-    $('.fa-arrow-right').addClass('fa-rotate-90');
-  }
-  else{
-    $('.fa-arrow-right').removeClass('fa-rotate-90');
-  }
+// $(document).ready(function () {
+//   var width = $(window).width();
+//   if (width <= 768) {
+//     $('.fa-arrow-right').addClass('fa-rotate-90');
+//   }
+//   else{
+//     $('.fa-arrow-right').removeClass('fa-rotate-90');
+//   }
 
-  // var InputTrialdate = document.getElementById("InputTrialdate");
-  // InputTrialdate.min = new Date().toLocaleDateString('en-ca');
-  // InputTrialdate.value = new Date().toLocaleDateString('en-ca');
-  today = new Date();
-  maxdate = today;
-  maxdate.setDate(today.getDate() + 21);
-  document.getElementById('InputTrialdate').setAttribute('value',new Date().toLocaleDateString('en-ca'));
-  document.getElementById('InputTrialdate').setAttribute('max',maxdate.toLocaleDateString('en-ca'));
-  document.getElementById('InputTrialdate').setAttribute('min',new Date().toLocaleDateString('en-ca'));
-});
+//   // var InputTrialdate = document.getElementById("InputTrialdate");
+//   // InputTrialdate.min = new Date().toLocaleDateString('en-ca');
+//   // InputTrialdate.value = new Date().toLocaleDateString('en-ca');
+//   today = new Date();
+//   maxdate = today;
+//   maxdate.setDate(today.getDate() + 21);
+//   document.getElementById('InputTrialdate').setAttribute('value',new Date().toLocaleDateString('en-ca'));
+//   document.getElementById('InputTrialdate').setAttribute('max',maxdate.toLocaleDateString('en-ca'));
+//   document.getElementById('InputTrialdate').setAttribute('min',new Date().toLocaleDateString('en-ca'));
+// });
