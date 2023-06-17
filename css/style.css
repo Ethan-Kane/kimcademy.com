@@ -377,5 +377,5 @@ html,body
     font-weight: 500;
     pointer-events: none;
     display: none;
-    z-index: 99;
+    opacity: 1 !important;
 }
