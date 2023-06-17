@@ -192,15 +192,15 @@
         Schedule a trial lesson free of charge. Simply fill out the form and I'll get in touch!
       </h4>
     </div>
-    <form action="https://formsubmit.co/jihkim3@gmail.com" method="POST">
+    <form id="actualform" action="https://formsubmit.co/56ff7b2f4ebdc8916279939a1f819046" method="POST">
       <!-- Success overlay -->
-      <!-- <div id="succoverlay"></div> -->
+      <div id="succoverlay"></div>
       <!-- Honeypot -->
-      <!-- <input type="text" name="_honey" style="display:none;"> -->
+      <input type="text" name="_honey" style="display:none;">
       <!-- Disable Captcha -->
-      <!-- <input type="hidden" name="_captcha" value="false"> -->
+      <input type="hidden" name="_captcha" value="false">
       <!-- Post-form direction -->
-      <!-- <input type="hidden" name="_next" value="https://www.kimcademy.com/tutoring"> -->
+      <input type="hidden" name="_next" value="https://www.kimcademy.com/tutoring?submitted=true">
 
       <div class="row">
         <div class="col-md mb-3">
@@ -287,13 +287,12 @@
       document.getElementById('InputTrialdate').setAttribute('max',maxdate.toLocaleDateString('en-ca'));
       document.getElementById('InputTrialdate').setAttribute('min',new Date().toLocaleDateString('en-ca'));
 
-      // let searchParams = new URLSearchParams(window.location.search)
-      
-      // if (searchParams.has('submitted') && searchParams.has('submitted') === true) {
-      //   document.getElementById('succoverlay').style.display = "block";
-      //   document.getElementById('succmsg').style.display = "block";
-      //   element = document.getElementById("actualform").classList.add("succactive");
-      // }
+      let searchParams = new URLSearchParams(window.location.search)
+      if (searchParams.has('submitted') && searchParams.has('submitted') === true) {
+        document.getElementById('succoverlay').style.display = "block";
+        document.getElementById('succmsg').style.display = "block";
+        element = document.getElementById("actualform").classList.add("succactive");
+      }
     });
 
   </script>
