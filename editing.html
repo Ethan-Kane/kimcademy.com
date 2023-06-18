@@ -143,7 +143,7 @@
         Affordable service that is accessible to students
       </h4>
     </div>
-    <form id="actualform" class="text-center needs-validation">
+    <form id="actualform" class="text-center needs-validation" action="https://formsubmit.co/56ff7b2f4ebdc8916279939a1f819046" method="POST">
       <!-- Success overlay -->
       <div id="succoverlay"></div>
       <!-- Subject -->
@@ -245,6 +245,9 @@
         document.getElementById('succoverlay').style.display = "block";
         document.getElementById('succmsg').style.display = "block";
         element = document.getElementById("actualform").classList.add("succactive");
+        
+        // Show full form
+        orderform()
       }
     });
   </script>
