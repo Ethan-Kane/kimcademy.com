@@ -394,7 +394,10 @@ html,body
 }
 
 #edtrates .orderinput{
-    /* display: none; */
+    display: none;
+}
+#edtrates #order-btn{
+    display: none;
 }
 
 th{

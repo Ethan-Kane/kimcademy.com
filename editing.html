@@ -206,8 +206,11 @@
         </div>
       </div>
       <div id="btnandmsg" class="row text-start justify-content-center mb-3">
-        <div class="col-lg-4 offset-lg-4">
-          <button type="submit" class="btn btn-primary w-100" onclick="orderform()">Proceed to order</button>
+        <div id="showform-btn" class="col-lg-4 offset-lg-4">
+          <button type="submit" class="btn btn-secondary w-100" onclick="orderform()">Proceed to order</button>
+        </div>
+        <div id="order-btn" class="col-lg-4 offset-lg-4">
+          <button type="submit" class="btn btn-primary w-100">Place order</button>
         </div>
         <div class="col-lg-4 my-lg-0 my-2">
           <div id="succmsg" class="my-auto btn btn-success w-100">
@@ -285,6 +288,8 @@
       for (var i = 0; i < orderfields.length; i++) {
         orderfields[i].style.display = "block";
       }
+      document.getElementById("showform-btn").style.display = "none";
+      document.getElementById("order-btn").style.display = "block";
     };
   </script>
 
