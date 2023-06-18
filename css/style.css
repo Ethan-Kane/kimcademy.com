@@ -29,15 +29,6 @@ html,body
     margin: 0;
 }
 
-.fillpage{
-    height: 100%;
-}
-@media (max-width: 768px){
-    .fillpage{
-        height: 120%;
-    }
-}
-
 #header.myheader{
   position: sticky;
   top: 0;
@@ -302,10 +293,6 @@ html,body
     background-color: var(--cprimarylight);
     color: white;
     font-size: 0.8rem;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 #tutprocess .card,
