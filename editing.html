@@ -21,6 +21,8 @@
   <script src="https://kit.fontawesome.com/c450758ba1.js" crossorigin="anonymous"></script>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <script>
     $(function(){
       $("#header").load("assets/header.html");
@@ -216,7 +218,6 @@
           <div id="succmsg" class="my-auto btn btn-success w-100">
             Form submitted successfully
           </div>
-          <!-- <button class="btn btn-primary w-100" type="submit" onclick="orderform()">Proceed to order</button> -->
         </div>
       </div>
     </form>
@@ -246,9 +247,16 @@
         document.getElementById('succmsg').style.display = "block";
         element = document.getElementById("actualform").classList.add("succactive");
         
+        Swal.fire({
+          title: 'Order placed!',
+          text: 'I will reach out to you shortly',
+          icon: 'success',
+          confirmButtonColor: '#0d1f5c',
+        })
+
         // Show full form
         orderform()
-      }
+      }     
     });
   </script>
 

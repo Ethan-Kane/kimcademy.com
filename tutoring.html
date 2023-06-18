@@ -21,6 +21,8 @@
   <script src="https://kit.fontawesome.com/c450758ba1.js" crossorigin="anonymous"></script>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <script>
     $(function(){
       $("#header").load("assets/header.html");
@@ -204,22 +206,22 @@
       <!-- Post-form direction -->
       <input type="hidden" name="_next" value="https://ericjhkim.github.io/kimcademy.com/tutoring.html?submitted=true">
 
-      <div class="row">
-        <div class="col-md mb-3">
+      <div class="row text-start justify-content-center">
+        <div class="col-lg-4 my-3">
           <label for="InputFname" class="form-label">First name</label>
           <input type="fname" class="form-control" id="InputFname" name="First name" maxlength="30" required>
         </div>
-        <div class="col-md mb-3">
+        <div class="col-lg-4 my-3">
           <label for="InputLname" class="form-label">Last name</label>
           <input type="lname" class="form-control" id="InputLname" name="Last name" maxlength="30" required>
         </div>
-        <div class="col-md mb-3">
+      </div>
+      <div class="row text-start justify-content-center">
+        <div class="col-lg-4 my-3">
           <label for="InputEmail" class="form-label">Email address</label>
           <input type="email" class="form-control" id="InputEmail" name="Email" maxlength="50" required>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md mb-3">
+        <div class="col-lg-4 my-3">
           <label for="InputStudent" class="form-label">Student</label>
           <select class="form-control" id="InputStudent" name="Student">
             <option disabled selected value style="display:none"></option>
@@ -228,11 +230,13 @@
             <option id="select_otherstudent">Other (please specify in text area)</option>
           </select>
         </div>
-        <div class="col-md mb-3">
+      </div>
+      <div class="row text-start justify-content-center">
+        <div class="col-lg-4 my-3">
           <label for="InputTrialdate" class="form-label">Trial lesson:</label>
           <input type="date" class="form-control" id="InputTrialdate" name="Trial date" value="2023-06-01" min="2023-06-01" max="2025-06-01">
         </div>
-        <div class="col-md mb-3">
+        <div class="col-lg-4 my-3">
           <label for="InputTrialtime" class="form-label">Meeting time:</label>
           <select class="form-control" id="InputTrialtime" name="Trial time">
             <option disabled selected value style="display:none"></option>
@@ -250,17 +254,22 @@
           </select>
         </div>
       </div>
-
-      <div class="mb-3">
-        <label for="InputMsg">Message</label>
-        <textarea id="InputMsg" name="Message" class="form-control" required placeholder="Please feel free to leave additional details."
-        rows="3" maxlength="1000"></textarea>
+      <div class="row text-start justify-content-center">
+        <div class="col-lg-8 my-3">
+          <label for="InputMsg">Message</label>
+          <textarea id="InputMsg" name="Message" class="form-control" required placeholder="Please feel free to leave additional details."
+          rows="3" maxlength="1000"></textarea>
+        </div>
       </div>
 
-      <div id="btnandmsg">
-        <button type="submit" class="btn btn-primary me-1">Submit</button>
-        <div id="succmsg" class="my-auto btn btn-success">
-          Form submitted successfully
+      <div id="btnandmsg" class="row text-start justify-content-center mb-3">
+        <div class="col-lg-4">
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+        <div class="col-lg-4 my-lg-0 my-2">
+          <div id="succmsg" class="my-auto btn btn-success w-100">
+            Form submitted successfully
+          </div>
         </div>
       </div>
     </form>
@@ -290,9 +299,15 @@
         document.getElementById('succoverlay').style.display = "block";
         document.getElementById('succmsg').style.display = "block";
         element = document.getElementById("actualform").classList.add("succactive");
+
+        Swal.fire({
+          title: 'Order placed!',
+          text: 'I will reach out to you shortly',
+          icon: 'success',
+          confirmButtonColor: '#0d1f5c',
+        })
       }
     });
-
   </script>
 
 </body>
