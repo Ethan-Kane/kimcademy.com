@@ -25,12 +25,13 @@ html,body
     /* font-family: 'Noto Sans TC', sans-serif; */
     /* font-family: 'Rubik', sans-serif; */
     font-family: 'Inter', sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
-/* Header */
-/* #header #navbarplaceholder{
-    height: 90px;
-} */
+.fillpage{
+    height: 100%;
+}
 
 #header.myheader{
   position: sticky;
@@ -398,6 +399,11 @@ html,body
 }
 #edtrates #order-btn{
     display: none;
+}
+
+#self-intro p{
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
 th{
