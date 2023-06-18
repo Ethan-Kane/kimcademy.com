@@ -32,6 +32,11 @@ html,body
 .fillpage{
     height: 100%;
 }
+@media (max-width: 768px){
+    .fillpage{
+        height: 120%;
+    }
+}
 
 #header.myheader{
   position: sticky;
