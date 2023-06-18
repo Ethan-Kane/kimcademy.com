@@ -229,7 +229,7 @@ html,body
     transition: all 0.1s ease-in-out;
 }
 .card:hover{
-    box-shadow: 0px 0px 20px 6px rgba(90, 96, 158, 0.1);
+    box-shadow: 0px 0px 10px 2px rgba(90, 96, 158, 0.1);
 }
 
 .hr_fade{
@@ -245,17 +245,17 @@ html,body
 }
 
 .carousel-inner{
-    min-height: 10em;
+    min-height: 12em;
 }
 @media (max-width: 768px){
     .carousel-inner{
-        min-height: 19em;
+        min-height: 22em;
     }
 }
 .carousel-control-next,
 .carousel-control-prev {
-  width: 5vw;
-  height: 50vh;
+    width: 5vw;
+    height: 50vh;
 }
 .carousel-control-next,
 .carousel-control-prev{
@@ -266,6 +266,10 @@ html,body
 }
 .carousel-indicators button.active{
 	background-color: var(--cprimarylight) !important;
+}
+.carousel-item h5,
+.carousel-item h6{
+    color: rgb(61, 61, 61);
 }
 
 .sectitle .stress{
@@ -295,7 +299,9 @@ html,body
 }
 
 #tutprocess .card,
-#tutprogram .card{
+#tutprogram .card,
+#edtprocess .card,
+#edtprogram .card{
     border: none;
 }
 #tutprocess .row>div:nth-child(1) .card{
@@ -346,7 +352,52 @@ html,body
     background-color: #61a5c2a0;
 }
 
-#tutrates th{
+#edtprocess .row>div:nth-child(1) .card{
+    background-color: #ffc97170;
+}
+#edtprocess .row>div:nth-child(2) .card{
+    background-color: #ffb62770;
+}
+#edtprocess .row>div:nth-child(3) .card{
+    background-color: #ff950570;
+}
+#edtprocess .row>div:nth-child(4) .card{
+    background-color: #e2711d70;
+}
+
+#edtprocess .row>div:nth-child(1) .card:hover{
+    background-color: #ffc971;
+}
+#edtprocess .row>div:nth-child(2) .card:hover{
+    background-color: #ffb627;
+}
+#edtprocess .row>div:nth-child(3) .card:hover{
+    background-color: #ff9505;
+}
+#edtprocess .row>div:nth-child(4) .card:hover{
+    background-color: #e2711d;
+}
+
+#edtprogram .card{
+    background-color: #fc2f0060;
+}
+#edtprogram .card:hover{
+    background-color: #fc2f0090;
+}
+#edtrates .form-label{
+    font-weight: 500;
+}
+#edtrates .input-help{
+    color: rgb(59, 59, 59);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#edtrates .orderinput{
+    /* display: none; */
+}
+
+th{
     font-size: 1.2rem;
 }
 
@@ -377,4 +428,11 @@ html,body
     font-weight: 500;
     pointer-events: none;
     display: none;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
