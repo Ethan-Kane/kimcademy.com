@@ -396,7 +396,7 @@ html,body
 #edtrates .orderinput{
     display: none;
 }
-#edtrates .order-btn{
+#edtrates #order-btn{
     display: none;
 }
 
