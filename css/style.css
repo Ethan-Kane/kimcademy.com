@@ -441,3 +441,11 @@ footer>div{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+#dynword{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.hide{
+    opacity: 0 !important;
+}

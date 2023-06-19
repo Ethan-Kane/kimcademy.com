@@ -65,7 +65,7 @@
             A tutoring and editing service for academic writing, whether it's for high school, university, or research.
           </p>
           <div class="mybtn my-5">
-            <a href="contact.html">
+            <a href="tutoring.html#tutform" id="test">
               Schedule a Trial
             </a>
           </div>
@@ -278,6 +278,26 @@
   </section> -->
   
   <div id="footer"></div>
+  
+  <script>
+    var text = ["essays", "papers", "assignments"];
+    var counter = 1;
+    var elem = document.getElementById("dynword");
+    elem.innerHTML = text[counter-1];
+    setInterval(change, 4000);
+    
+    function change() {
+        elem.classList.add('hide');
+        setTimeout(function () {
+            elem.innerHTML = text[counter];
+            elem.classList.remove('hide');
+            counter++;
+            if (counter >= text.length) {
+                counter = 0;
+            }
+        }, 500);
+    }
+  </script>
 
 </body>
 </html>
